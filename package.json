@@ -4,6 +4,8 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
@@ -14,8 +16,10 @@
     "@strapi/plugin-users-permissions": "4.5.3",
     "@strapi/strapi": "4.5.3",
     "better-sqlite3": "7.4.6",
+    "gh-pages": "^6.0.0",
     "stripe": "^11.3.0"
   },
+  "homepage": "https://Hiep2301.github.io/strapi-simple-one",
   "author": {
     "name": "A Strapi developer"
   },
